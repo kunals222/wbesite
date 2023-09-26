@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubantu&disply=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&disply=swap');
+body{
+    background-color: antiquewhite;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.nav-bar{
+    position:sticky;
+    top : 0;
+}
+nav{
+    font-family: 'Ubantu',sans-serif;
+    
+}
+nav ul{
+    
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 65px;
+    list-style-type: none;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+.brand img{
+    height:50px;
+    width: 150px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 5px;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.container{
+    min-height: 60vh;
+    background-color: black;
+    font-family: 'varela Round',sans-serif;
+    color: white;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    margin: 23px auto;
+    background-image: url("../templates/background1.jpg");
+}
+.container:hover{
+    background-image: url("../templates/background2.jpg");
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    height: 100px;
+    /* width: 100%; */
+    background-color:black;
+    bottom: 0;
+    color: white;
+    flex-direction: column;
+}
+.icon{
+    margin-top: 15px;
+}
+#myprogressbar{
+    width: 80vw;
+    /* display: flex; */
+    cursor: pointer ;
+    
+}
+.song-item{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    color: black;
+    height: 50px;
+    border-radius: 34px;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.song-item img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+
+
+.timestamp{
+    margin: 0 23px;
+    display: flex;
+}
+.timestamp i{
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.song-list{
+    margin-top:40px ;
+}
+.songinfo{
+    position: absolute;
+    left:10vw;
+    display: flex;
+    align-items: center;
+    font-family: 'varela Round',sans-serif;
+}
+.songinfo img{
+    height: 40px;
+    width: 150px;
+    opacity:0;
+    transition: opacity 0.4s ease-in;
+
+}
+
+@media(max-width : 600px){
+    .container{
+        padding: 10px;
+        width: 60%;
+    }
+     
+    .song-item{
+        height: 100px;
+    }
+}
+
+@media (max-width : 1000px) {
+    
+    .songinfo{
+        display: block;
+        left :0;
+        
+    }
+}
+
+@media (max-width : 900px) {
+    
+    .songinfo{
+        display: none;
+        
+        
+    }
+}
+
+@media (max-width : 400px) {
+    .song-name{
+        display: none;
+    }
+}
+
+@media(max-width : 320px){
+    body{
+        width: 320px;
+    }
+}
